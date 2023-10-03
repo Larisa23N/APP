@@ -11,6 +11,7 @@ h2 {
   padding: 20px;
   display: block;
 }
+
 h3,
 h4 {
   color: blue;
@@ -25,16 +26,19 @@ h5 {
   margin: 0 auto;
   padding: 10px;
 }
+
 .btn-success {
   position: fixed;
   right: 830px;
   top: 50;
 }
+
 form {
   size: 10px;
 }
+
 .col-6 {
-  color: #000;
+  color: rgb(44, 212, 184);
   padding: 20px;
   font-size: 16px;
   margin: 3px;
