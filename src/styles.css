@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Cinzel", serif;
+}
+
+h1,
+h2 {
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+}
+h3,
+h4 {
+  color: blue;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 16px;
+  top: 0;
+}
+
+h5 {
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.btn-success {
+  position: fixed;
+  right: 830px;
+  top: 50;
+}
+form {
+  size: 10px;
+}
+.col-6 {
+  color: #000;
+  padding: 20px;
+  font-size: 16px;
+  margin: 3px;
+  top: 0;
+}
