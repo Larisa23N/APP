@@ -44,3 +44,10 @@ form {
   margin: 3px;
   top: 0;
 }
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
