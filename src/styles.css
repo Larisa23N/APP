@@ -16,7 +16,7 @@ h3,
 h4 {
   color: blue;
   padding: 10px;
-  margin: 0 auto;
+  margin: 10px;
   font-size: 16px;
   top: 0;
 }
@@ -29,8 +29,9 @@ h5 {
 
 .btn-success {
   position: fixed;
-  right: 830px;
-  top: 50;
+  right:885px;
+  top:80;
+ line-height: 20px;
 }
 
 form {
