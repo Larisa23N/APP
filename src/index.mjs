@@ -19,12 +19,14 @@ let humidityElement=document.querySelector("#humid");
 let h1 = document.querySelector("h1");
 let iconElement = document.querySelector("#icon")
 let temperatureElement= document.querySelector("#temp")
+let descriptionElement = document.querySelector("#description")
 
 celsiusTemperature= Math.round(response.data.main.temp)
  celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
 
-temperatureElement.innerHTML= Math.round(response.data.main.temp)
+temperatureElement.innerHTML= Math.round(response.data.main.temp);
+ descriptionElement.innerHTML = response.data.weather[0].description;
 h1.innerHTML = response.data.name;
 windElement.innerHTML= response.data.wind.speed;
 humidityElement.innerHTML= response.data.main.humidity
