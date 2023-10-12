@@ -22,7 +22,7 @@ let temperatureElement= document.querySelector("#temp")
 
 
 
-temperatureElement= Math.round(response.data.main.temp)
+temperatureElement.innerHTML= Math.round(response.data.main.temp)
 h1.innerHTML = response.data.name;
 windElement.innerHTML= response.data.wind.speed;
 humidityElement.innerHTML= response.data.main.humidity
