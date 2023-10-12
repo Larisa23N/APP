@@ -55,6 +55,7 @@ form {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
 }
 li {
   list-style: none;
