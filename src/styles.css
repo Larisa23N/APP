@@ -14,7 +14,7 @@ h2 {
 
 h3,
 h4 {
-  color: blue;
+  color: rgb(37, 52, 46);
   padding: 10px;
   margin: 10px;
   font-size: 16px;
@@ -39,11 +39,13 @@ form {
 }
 
 .col-6 {
-  color: rgb(44, 212, 184);
+  color: rgb(10, 51, 59);
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
   margin: 3px;
   top: 0;
+  font-weight: 200;
+  font-style: bold;
 }
 .weather-app {
   max-width: 600px;
@@ -51,4 +53,16 @@ form {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
 }
