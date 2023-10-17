@@ -24,7 +24,7 @@
 
         <h1 id="city"></h1>
         <h2>
-            <form id="search-form" class ="mb-3">
+            <form id="search-form" >
                 <div class="row">
                     <div class ="col-12">
                 <input type="text" 
@@ -32,9 +32,9 @@
                  autocomplete="off" 
                  autofocus="on
                  " id="search-text-input" />
-                <input type="submit" value="search" class="btn btn-primary " class="mb-2"/>
+                <input type="submit" value="search" class="btn btn-primary "/>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
              <button type="button" class="btn btn-success " id=" current-location">Current City</button>
             </div>
                 </div>
@@ -58,7 +58,7 @@
             <div class="clearfix weather-temperature">
                 <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
-                    <li id="description"></li>
+                    <li id="description">clear</li>
                     <strong id="temp"></strong>
                     <span class="units"><a href="#" class="active" id="celsius-link">°C </a>|<a href="#" id="fahrenheit-link" class="">
                             °F</a></span>
@@ -78,53 +78,14 @@
         <ul>
             <h5>
 
-                <div class="row">
-                    <div class="col">
-                        Wed
-                        <br />
-                        ☀️
-                        <br />
-                        <strong>28°C</strong>/13°C
-                    </div>
-                    <div class="col">
-                        Thu
-                        <br />
-                        ☀️
-                        <br />
-                        <strong>28°C</strong>/13°C
-                    </div>
-                    <div class="col">
-                        Fri
-                        <br />
-                        🌥️
-                        <br />
-                        <strong>22°C</strong>/11°C
-                    </div>
-                    <div class="col">
-                        Sat
-                        <br />
-                        ☁️
-                        <br />
-                        <strong>20°C</strong>/10°C
-                    </div>
-                    <div class="col">
-                        Sun
-                        <br />
-                        🌥️
-                        <br />
-
-                        <strong>22°C</strong>/13°C
-                    </div>
-                </div>
-    </div>
-    </ul>
-    </h4>
-</div>
-</div>
-<footer>
-<p><a href=https://github.com/Larisa23N/weather-apps.git target="_blank">Open source code</a> by Larisa Naguriah</p>
+                <div class="weather-forecast" id="forecast">
+                
+                
+            </div>
+            <p><a href=https://github.com/Larisa23N/weather-apps.git target="_blank">Open source code</a> by Larisa Naguriah</p>
     
-    </footer>
+</div>
+</div>
 </body>
 <script src="src/index.mjs"></script>
 
