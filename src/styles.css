@@ -27,15 +27,27 @@ h5 {
   padding: 10px;
   text-align: center;
   margin-top: 20px;
+
+}
+body{
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
+}
+.btn-primary{
+  background: rgb(104, 111, 130);
 }
 
 .btn-success {
-  position:fixed;
-  right:885px;
+ background: rgb(104, 111, 130);
+  right:85px;
   top:80;
-  line-height: 20px;
+  line-height: 15px;
   display: block;
+  margin: 0 auto;
+ 
+ 
 }
+
+
 
 form {
   size: 1px;
@@ -58,9 +70,7 @@ form {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 15px;
-  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-}
-li {
+  background:linear-gradient(179.7deg, rgb(248, 126, 126) -0.5%, rgb(251, 206, 143) 35.3%, rgb(184, 252, 233) 67.2%, rgb(118, 162, 229) 92.3%);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -91,6 +101,8 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
+
+
 
 .weather-temperature .active {
   color: rgb(33, 33, 33);

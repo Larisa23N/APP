@@ -1,6 +1,9 @@
 let now = new Date();
 
 let currentMinutes =now.getMinutes();
+if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`;
+  }
 let currentHours =now.getHours();
 if (currentHours < 10) {
     currentHours = `0${currentHours}`;
