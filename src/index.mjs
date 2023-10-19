@@ -2,6 +2,9 @@ let now = new Date();
 
 let currentMinutes =now.getMinutes();
 let currentHours =now.getHours();
+if (currentHours < 10) {
+    currentHours = `0${currentHours}`;
+  }
 let currentDate =now.getDate(); 
 let days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
 let currentDay = days[now.getDay()];
@@ -11,7 +14,8 @@ let currentMonth = months[now.getMonth()];
 let h3 = document.querySelector("h3")
 h3.innerHTML = `${currentDay} ${currentMonth} ${currentDate}, ${currentHours}:${currentMinutes} `;
 
-function displayForecast(){
+function displayForecast(response){
+  console.log(response.data.daily)
   let forecastElement= document.querySelector("#forecast");
 let forecastHTML = `<div class="row">`;
 let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -38,8 +42,14 @@ let days = ["Thu", "Fri", "Sat", "Sun"];
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+function getForecast(coordinates){
+  console.log(coordinates);
+   let apiKey="866a208a73eeff02182218e9441647a1"
+   let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+   console.log(apiUrl)
+   axios.get(apiUrl).then(displayForecast)
 
-
+}
 
 function showWeather(response){
   console.log(response.data)
@@ -50,6 +60,8 @@ let h1 = document.querySelector("h1");
 let iconElement = document.querySelector("#icon")
 let temperatureElement= document.querySelector("#temp")
 let descriptionElement = document.querySelector("#description")
+
+getForecast(response.data.coord)
 
 celsiusTemperature= Math.round(response.data.main.temp)
  celsiusLink.classList.remove("active");
@@ -91,7 +103,7 @@ form.addEventListener("submit",handleSubmit)
     let apiKey="866a208a73eeff02182218e9441647a1"
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     axios.get(url).then(showWeather)
-
+  
 
 }
 function getCurrentPosition() {
@@ -115,7 +127,7 @@ function displayCelsiusTemperature(event){
 }
 
 let celsiusTemperature = null;
-displayForecast()
+
 
 let fahrenheitLink=document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click",displayFahrenheitTemperature);
